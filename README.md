@@ -5,7 +5,7 @@ Excuse the messy code!
 
 ## Featured:
 
-* A shitty C++ calculator!
+* A C++ calculator with support for only 2 arguments!
 * A 2 line makefile!
 * Bad rust fizzbuzz!
 * Slightly better C++ fizzbuzz!
