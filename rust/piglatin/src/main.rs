@@ -24,17 +24,17 @@ fn to_piglatin(input: &mut String) -> String {
 
     // determine if first char of input is a vowel or consonant
     match vector {
-        "b" | "c" | "d" | "f" | "g" |  "j" | "k" | "l" | "m" | "n" | "p" | "q" | "r" | "s" | "t" | "v" | "x" | "z" | "h" | "w" | "y" => {
-            // append first char and -hay to end if first char is a consonant
+        "a" | "e" | "i" | "o" | "u" => {
+            // append just -hay to end if first char is a vowel
+            trimmed.push_str("-hay");
+        
+        }
+        // append first char and ay to end if first char is a consonant
+        _ => {
             trimmed.remove(0); 
             trimmed.push_str("-");
             trimmed.push_str(vector);
             trimmed.push_str("ay");
-        
-        }
-        // append just -hay to end if first char is a vowel
-        _ => {
-            trimmed.push_str("-hay");
         }
     }
     
